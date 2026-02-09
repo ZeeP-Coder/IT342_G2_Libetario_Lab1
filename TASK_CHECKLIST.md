@@ -6,10 +6,11 @@
 - Database connection (MySQL)
 - React web application
 - Spring Boot backend
-- authentication
+- Authentication
 
 ## IN-PROGRESS
-- Documentation update
+
 
 ## TODO
 - Mobile application
+- Documentation update
