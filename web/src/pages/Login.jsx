@@ -9,10 +9,10 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // backend connection comes later
-    console.log({ email, password });
+    // MOCK LOGIN
+    localStorage.setItem("token", "fake-jwt-token");
 
-    alert("Login successful (mock)");
+    alert("Login successful");
     navigate("/dashboard");
   };
 
