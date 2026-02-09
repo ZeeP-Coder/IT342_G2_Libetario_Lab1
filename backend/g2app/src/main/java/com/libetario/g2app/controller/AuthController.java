@@ -40,5 +40,20 @@ public class AuthController {
             return ResponseEntity.status(401).body("Invalid email or password");
         }
     }
+
+    // GET CURRENT USER (Protected - requires authentication)
+    @GetMapping("/me")
+    public ResponseEntity<?> getCurrentUser(@RequestParam(name = "userId", required = false) Long userId) {
+        // If userId is provided (from frontend), fetch the user
+        if (userId != null) {
+            Optional<UserEntity> user = authService.getUserProfile(userId);
+            if (user.isPresent()) {
+                return ResponseEntity.ok(user.get());
+            } else {
+                return ResponseEntity.status(404).body("User not found");
+            }
+        }
+        return ResponseEntity.status(400).body("User ID is required");
+    }
 }
  

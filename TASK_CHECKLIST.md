@@ -1,7 +1,8 @@
 # TASK CHECKLIST
 
 ## DONE
-- Project structure setup
+- ERD
+- UML diagrams (from previous activity)
 - Database connection (MySQL)
 - React web application
 - Spring Boot backend
