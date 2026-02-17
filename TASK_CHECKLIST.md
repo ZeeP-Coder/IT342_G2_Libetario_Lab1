@@ -7,10 +7,10 @@
 - React web application
 - Spring Boot backend
 - Authentication
-
-## IN-PROGRESS
 - Mobile application
 - Documentation update
+
+## IN-PROGRESS
 
 ## TODO
 
